@@ -1,0 +1,21 @@
+{
+  "name": "jewelry-store",
+  "version": "1.0.0",
+  "description": "Multi-page jewelry store built with HTML, SCSS and JavaScript.",
+  "scripts": {
+  "sass": "sass scss/style.scss css/style.css",
+  "sass:watch": "sass --watch scss/style.scss css/style.css"
+  },
+  "keywords": [
+  "html",
+  "scss",
+  "css",
+  "responsive",
+  "frontend"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.101.7"
+  }
+}
