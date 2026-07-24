@@ -1,0 +1,23 @@
+@use "../abstracts/variables" as vars;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: vars.$font-family-heading;
+  font-weight: vars.$font-weight-regular;
+  line-height: 1.1;
+}
+
+p {
+  font-family: vars.$font-family-primary;
+}
+
+button,
+input,
+textarea,
+select {
+  font-family: inherit;
+}
