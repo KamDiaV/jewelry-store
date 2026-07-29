@@ -1,0 +1,88 @@
+@use "../abstracts/variables" as vars;
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  min-height: 72px;
+}
+
+.header__logo {
+  flex-shrink: 0;
+  margin-right: 63px;
+}
+
+.header__logo-image {
+  width: 132px;
+  height: auto;
+}
+
+.header__nav {
+  flex-shrink: 0;
+}
+
+.header__menu {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.header__menu-link {
+  position: relative;
+  color: vars.$color-text;
+  font-size: 16px;
+  font-weight: vars.$font-weight-regular;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  transition: color vars.$transition-duration;
+}
+
+.header__menu-link:hover {
+  color: vars.$color-accent;
+}
+
+.header__menu-link--accent {
+  color: vars.$color-accent;
+}
+
+.header__menu-link--accent::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -8px;
+  width: calc(100% + 16px);
+  height: 1px;
+  background-color: vars.$color-accent;
+  transform: translateY(-50%);
+}
+
+.header__actions {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-left: auto;
+}
+
+.header__action {
+  display: grid;
+  width: 20px;
+  height: 20px;
+  place-items: center;
+}
+
+.header__action-image {
+  width: 18px;
+  height: 18px;
+}
+
+.header__action-image--heart {
+  width: 20px;
+  height: 20px;
+}
