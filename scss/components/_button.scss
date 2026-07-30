@@ -1,0 +1,29 @@
+@use "../abstracts/variables" as vars;
+
+.button-link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  width: 195px;
+  padding: 0 0 8px 20px;
+  font-size: 16px;
+  font-weight: vars.$font-weight-semibold;
+  line-height: 1.5;
+  text-decoration: none;
+  transition: color vars.$transition-duration;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 1.5px;
+    background-color: currentColor;
+  }
+
+  &:hover,
+  &:focus-visible {
+    color: vars.$color-accent;
+  }
+}
