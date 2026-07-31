@@ -652,4 +652,116 @@ select {
   object-fit: cover;
 }
 
+.journal {
+  padding-bottom: 150px;
+}
+.journal__title {
+  font-family: "Cormorant", serif;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 1.3;
+  letter-spacing: 0.03em;
+  margin-bottom: 60px;
+  text-align: center;
+}
+.journal__slider {
+  position: relative;
+}
+.journal__list {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 30px;
+}
+.journal__arrow {
+  position: absolute;
+  z-index: 3;
+  top: 180px;
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 12px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+.journal__arrow img {
+  display: block;
+  width: 52px;
+  height: auto;
+  transition: opacity 0.2s;
+}
+.journal__arrow:hover img, .journal__arrow:focus-visible img {
+  opacity: 0.7;
+}
+.journal__arrow--prev {
+  left: -26px;
+}
+.journal__arrow--next {
+  right: -26px;
+}
+
+.journal-card {
+  min-width: 0;
+}
+.journal-card--offset {
+  margin-top: 30px;
+}
+.journal-card__image-wrapper {
+  position: relative;
+}
+.journal-card__image-wrapper--overlay::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  background-color: rgba(173, 173, 173, 0.5);
+  pointer-events: none;
+}
+.journal-card__image-link {
+  display: block;
+  overflow: hidden;
+}
+.journal-card__image {
+  display: block;
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  transition: transform 0.2s;
+}
+.journal-card__image-link:hover .journal-card__image, .journal-card__image-link:focus-visible .journal-card__image {
+  transform: scale(1.03);
+}
+.journal-card__read-more {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.journal-card__date {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #adadad;
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: 0.03em;
+}
+.journal-card__title {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.8;
+}
+.journal-card__title-link {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.journal-card__title-link:hover, .journal-card__title-link:focus-visible {
+  color: #ffa081;
+}
+
 /*# sourceMappingURL=style.css.map */

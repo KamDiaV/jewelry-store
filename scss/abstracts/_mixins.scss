@@ -13,3 +13,12 @@
   line-height: 2.1;
   letter-spacing: 0.03em;
 }
+
+@mixin image-overlay {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  background-color: rgba(173, 173, 173, 0.5);
+  pointer-events: none;
+}
