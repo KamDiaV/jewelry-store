@@ -281,14 +281,12 @@
   &__title {
     min-width: 0;
     font-size: 16px;
-    font-weight: vars.$font-weight-regular;
     line-height: 1.75;
   }
 
   &__title-link {
     color: inherit;
     text-decoration: none;
-    transition: color vars.$transition-duration;
 
     &:hover,
     &:focus-visible {
@@ -332,7 +330,6 @@
     line-height: 1.5;
     text-decoration: none;
     transform: translate(-50%, -50%);
-    transition: color vars.$transition-duration;
     
     &::after {
       content: "";
@@ -439,7 +436,7 @@
     height: 12px;
     padding: 0;
     border: none;
-    background: transparent;
+    background-color: transparent;
     cursor: pointer;
 
     img {
@@ -517,14 +514,12 @@
 
   &__title {
     font-size: 16px;
-    font-weight: vars.$font-weight-regular;
     line-height: 1.8;
   }
 
   &__title-link {
     color: inherit;
     text-decoration: none;
-    transition: color vars.$transition-duration;
 
     &:hover,
     &:focus-visible {

@@ -36,14 +36,11 @@
 
 .header__menu-link {
   position: relative;
-  font-size: 16px;
-  font-weight: vars.$font-weight-regular;
-  line-height: 1.5;
   letter-spacing: 0.03em;
-  transition: color vars.$transition-duration;
 }
 
-.header__menu-link:hover {
+.header__menu-link:hover,
+.header__menu-link:focus-visible {
   color: vars.$color-accent;
 }
 
