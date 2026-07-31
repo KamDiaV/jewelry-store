@@ -414,4 +414,54 @@ select {
   letter-spacing: 0.03em;
 }
 
+.feature {
+  padding-bottom: 150px;
+  overflow: hidden;
+}
+.feature__inner {
+  display: grid;
+  grid-template-columns: 585px minmax(0, 1fr);
+  width: calc(100% + 143px);
+}
+.feature__content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 92px;
+  background-color: #f8f7f6;
+}
+.feature__content::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  background-color: inherit;
+}
+.feature__title {
+  max-width: 400px;
+  margin-bottom: 27px;
+  font-family: "Cormorant", serif;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 1.3;
+  letter-spacing: 0.03em;
+}
+.feature__description {
+  margin-bottom: 37px;
+  font-size: 16px;
+  line-height: 2.1;
+  letter-spacing: 0.03em;
+}
+.feature__image {
+  display: block;
+  width: 100%;
+  height: 632px;
+  object-fit: cover;
+}
+
 /*# sourceMappingURL=style.css.map */
