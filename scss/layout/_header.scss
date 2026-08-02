@@ -6,6 +6,10 @@
   left: 0;
   z-index: 10;
   width: 100%;
+
+  &--static {
+    position: static;
+  }
 }
 
 .header__inner {

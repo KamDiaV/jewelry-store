@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    >
+    <meta
+      name="description"
+      content="Versa jewelry store — timeless necklaces, rings, earrings and watches."
+    >
+    <title>Shop — Versa Jewelry Store</title>
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <header class="header header--static">
+      <div class="container">
+        <div class="header__inner">
+          <a class="header__logo" href="./index.html" aria-label="Versa home">
+            <img
+              class="header__logo-image"
+              src="./assets/icons/logo.svg"
+              alt=""
+            >
+          </a>
+          <nav class="header__nav" aria-label="Main navigation">
+            <ul class="header__menu">
+              <li class="header__menu-item">
+                <a class="header__menu-link" href="./index.html">Home</a>
+              </li>
+              <li class="header__menu-item">
+                <a class="header__menu-link" href="#">About</a>
+              </li>
+              <li class="header__menu-item">
+                <a class="header__menu-link" href="#">Blog</a>
+              </li>
+              <li class="header__menu-item">
+                <a class="header__menu-link header__menu-link--accent" href="./shop.html">
+                  Shop
+                </a>
+              </li>
+              <li class="header__menu-item">
+                <a class="header__menu-link" href="#">Features</a>
+              </li>
+              <li class="header__menu-item">
+                <a class="header__menu-link" href="#">Contacts</a>
+              </li>
+              <li class="header__menu-item">
+                <a class="header__menu-link" href="#">Instant Quote</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="header__actions" aria-label="Account actions">
+            <li class="header__actions-item">
+              <a class="header__action" href="#" aria-label="Wishlist">
+                <img
+                  class="header__action-image header__action-image--heart"
+                  src="./assets/icons/heart.svg"
+                  alt=""
+                >
+              </a>
+            </li>
+            <li class="header__actions-item">
+              <a class="header__action" href="#" aria-label="Shopping bag">
+                <img
+                  class="header__action-image"
+                  src="./assets/icons/cart.svg"
+                  alt=""
+                >
+              </a>
+            </li>
+            <li class="header__actions-item">
+              <a class="header__action" href="#" aria-label="Account">
+                <img
+                  class="header__action-image"
+                  src="./assets/icons/user.svg"
+                  alt=""
+                >
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="shop">
+        <div class="container">
+          <nav class="shop__breadcrumbs" aria-label="Breadcrumb">
+            <ol class="shop__breadcrumbs-list">
+              <li class="shop__breadcrumbs-item">
+                <a class="shop__breadcrumbs-link" href="./index.html">
+                  Home
+                </a>
+              </li>
+              <li class="shop__breadcrumbs-item" aria-current="page">
+                Shop
+              </li>
+            </ol>
+          </nav>
+          <div class="shop__heading">
+            <h1 class="shop__title">
+              Shop
+            </h1>
+            <div class="shop__controls">
+              <label class="visually-hidden" for="shop-sort">
+                Sort products
+              </label>
+              <select class="shop__sort" id="shop-sort" name="sort">
+                <option value="latest">Sort by latest</option>
+                <option value="price-low">Low to high</option>
+                <option value="price-high">High to low</option>
+              </select>
+              <form class="shop__search" action="#" method="get">
+                <label class="visually-hidden" for="shop-search">
+                  Search products
+                </label>
+                <input
+                  class="shop__search-input"
+                  id="shop-search"
+                  name="search"
+                  type="text"
+                  placeholder="Search..."
+                >
+                <button
+                  class="shop__search-button"
+                  type="submit"
+                  aria-label="Search"
+                >
+                  <img
+                    class="shop__search-icon"
+                    src="./assets/icons/search.svg"
+                    alt=""
+                  >
+                </button>
+              </form>
+            </div>
+          </div>
+          <nav class="shop__categories" aria-label="Product categories">
+            <ul class="shop__categories-list">
+              <li class="shop__categories-item">
+                <a
+                  class="shop__category shop__category--active"
+                  href="#"
+                  aria-current="page"
+                >
+                  All <span class="shop__category-count">(41)</span>
+                </a>
+              </li>
+              <li class="shop__categories-item">
+                <a class="shop__category" href="#">
+                  Earrings <span class="shop__category-count">(11)</span>
+                </a>
+              </li>
+              <li class="shop__categories-item">
+                <a class="shop__category" href="#">
+                  Necklaces <span class="shop__category-count">(23)</span>
+                </a>
+              </li>
+              <li class="shop__categories-item">
+                <a class="shop__category" href="#">
+                  Bracelets <span class="shop__category-count">(2)</span>
+                </a>
+              </li>
+              <li class="shop__categories-item">
+                <a class="shop__category" href="#">
+                  Rings <span class="shop__category-count">(4)</span>
+                </a>
+              </li>
+              <li class="shop__categories-item">
+                <a class="shop__category" href="#">
+                  Jewellery sets <span class="shop__category-count">(1)</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="shop__grid">
+            <article class="catalog-card">
+              <a class="catalog-card__image-link" href="#">
+                <img
+                  class="catalog-card__image"
+                  src="./assets/images/shop/shop-1.jpg"
+                  alt="Gold chunky paperclip link chain"
+                >
+              </a>
+              <div class="catalog-card__info">
+                <h2 class="catalog-card__title">
+                  <a class="catalog-card__title-link" href="#">
+                    Gold chunky paperclip link chain
+                  </a>
+                </h2>
+                <span class="catalog-card__price">
+                  19,00 £
+                </span>
+              </div>
+            </article>
+            <article class="catalog-card">
+              <a class="catalog-card__image-link" href="#">
+                <img
+                  class="catalog-card__image"
+                  src="./assets/images/shop/shop-2.jpg"
+                  alt="Silver twisted rope chain necklace"
+                >
+              </a>
+              <div class="catalog-card__info">
+                <h2 class="catalog-card__title">
+                  <a class="catalog-card__title-link" href="#">
+                    Silver twisted rope chain. Stainless steel necklace
+                  </a>
+                </h2>
+                <span class="catalog-card__price">
+                  18,00 £
+                </span>
+              </div>
+            </article>
+            <article class="catalog-card">
+              <a class="catalog-card__image-link" href="#">
+                <img
+                  class="catalog-card__image"
+                  src="./assets/images/shop/shop-3.jpg"
+                  alt="Gold croissant thick twist ring"
+                >
+              </a>
+              <div class="catalog-card__info">
+                <h2 class="catalog-card__title">
+                  <a class="catalog-card__title-link" href="#">
+                    Gold croissant thick twist ring band
+                  </a>
+                </h2>
+                <span class="catalog-card__price">
+                  18,00 £
+                </span>
+              </div>
+            </article>
+            <article class="catalog-card">
+              <a class="catalog-card__image-link" href="#">
+                <img
+                  class="catalog-card__image"
+                  src="./assets/images/shop/shop-4.jpg"
+                  alt="Pearl necklace"
+                >
+              </a>
+              <div class="catalog-card__info">
+                <h2 class="catalog-card__title">
+                  <a class="catalog-card__title-link" href="#">
+                    Gold chunky paperclip link chain
+                  </a>
+                </h2>
+                <span class="catalog-card__price">
+                  19,00 £
+                </span>
+              </div>
+            </article>
+            <article class="catalog-card">
+              <a class="catalog-card__image-link" href="#">
+                <img
+                  class="catalog-card__image"
+                  src="./assets/images/shop/shop-5.jpg"
+                  alt="Gold and silver hoop earrings"
+                >
+              </a>
+              <div class="catalog-card__info">
+                <h2 class="catalog-card__title">
+                  <a class="catalog-card__title-link" href="#">
+                    Silver twisted rope chain. Stainless steel necklace
+                  </a>
+                </h2>
+                <span class="catalog-card__price">
+                  18,00 £
+                </span>
+              </div>
+            </article>
+            <article class="catalog-card">
+              <a class="catalog-card__image-link" href="#">
+                <img
+                  class="catalog-card__image"
+                  src="./assets/images/shop/shop-6.jpg"
+                  alt="Gold twisted hoop earrings"
+                >
+              </a>
+              <div class="catalog-card__info">
+                <h2 class="catalog-card__title">
+                  <a class="catalog-card__title-link" href="#">
+                    Gold croissant thick twist ring band
+                  </a>
+                </h2>
+                <span class="catalog-card__price">
+                  18,00 £
+                </span>
+              </div>
+            </article>
+            <article class="catalog-card">
+              <a class="catalog-card__image-link" href="#">
+                <img
+                  class="catalog-card__image"
+                  src="./assets/images/shop/shop-7.jpg"
+                  alt="Silver bracelet on a model"
+                >
+              </a>
+              <div class="catalog-card__info">
+                <h2 class="catalog-card__title">
+                  <a class="catalog-card__title-link" href="#">
+                    Gold chunky paperclip link chain
+                  </a>
+                </h2>
+                <span class="catalog-card__price">
+                  19,00 £
+                </span>
+              </div>
+            </article>
+            <article class="catalog-card">
+              <a class="catalog-card__image-link" href="#">
+                <img
+                  class="catalog-card__image"
+                  src="./assets/images/shop/shop-8.jpg"
+                  alt="Silver necklace with toggle clasp"
+                >
+              </a>
+              <div class="catalog-card__info">
+                <h2 class="catalog-card__title">
+                  <a class="catalog-card__title-link" href="#">
+                    Silver twisted rope chain. Stainless steel necklace
+                  </a>
+                </h2>
+                <span class="catalog-card__price">
+                  18,00 £
+                </span>
+              </div>
+            </article>
+            <article class="catalog-card">
+              <a class="catalog-card__image-link" href="#">
+                <img
+                  class="catalog-card__image"
+                  src="./assets/images/shop/shop-9.jpg"
+                  alt="Gold chunky chain necklace"
+                >
+              </a>
+              <div class="catalog-card__info">
+                <h2 class="catalog-card__title">
+                  <a class="catalog-card__title-link" href="#">
+                    Gold croissant thick twist ring band
+                  </a>
+                </h2>
+                <span class="catalog-card__price">
+                  18,00 £
+                </span>
+              </div>
+            </article>
+            <article class="catalog-card">
+              <a class="catalog-card__image-link" href="#">
+                <img
+                  class="catalog-card__image"
+                  src="./assets/images/shop/shop-10.jpg"
+                  alt="Silver chain necklace"
+                >
+              </a>
+              <div class="catalog-card__info">
+                <h2 class="catalog-card__title">
+                  <a class="catalog-card__title-link" href="#">
+                    Gold chunky paperclip link chain
+                  </a>
+                </h2>
+                <span class="catalog-card__price">
+                  19,00 £
+                </span>
+              </div>
+            </article>
+            <article class="catalog-card">
+              <a class="catalog-card__image-link" href="#">
+                <img
+                  class="catalog-card__image"
+                  src="./assets/images/shop/shop-11.jpg"
+                  alt="Gold ear cuff"
+                >
+              </a>
+              <div class="catalog-card__info">
+                <h2 class="catalog-card__title">
+                  <a class="catalog-card__title-link" href="#">
+                    Silver twisted rope chain. Stainless steel necklace
+                  </a>
+                </h2>
+                <span class="catalog-card__price">
+                  18,00 £
+                </span>
+              </div>
+            </article>
+            <article class="catalog-card">
+              <a class="catalog-card__image-link" href="#">
+                <img
+                  class="catalog-card__image"
+                  src="./assets/images/shop/shop-12.jpg"
+                  alt="Gold hoop earrings on white fabric"
+                >
+              </a>
+              <div class="catalog-card__info">
+                <h2 class="catalog-card__title">
+                  <a class="catalog-card__title-link" href="#">
+                    Gold croissant thick twist ring band
+                  </a>
+                </h2>
+                <span class="catalog-card__price">
+                  18,00 £
+                </span>
+              </div>
+            </article>
+          </div>
+          <a class="shop__more button-link" href="#">
+            View more
+          </a>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__top">
+            <div class="footer__newsletter">
+              <p class="footer__newsletter-text">
+                Lorem ipsum dolor sit amet
+              </p>
+              <form class="footer__form" action="#" method="post">
+                <label class="visually-hidden" for="footer-email">
+                  Email address
+                </label>
+                <input
+                  class="footer__input"
+                  id="footer-email"
+                  name="email"
+                  type="email"
+                  placeholder="Email"
+                  required
+                >
+                <button class="footer__submit" type="submit">
+                  Send
+                </button>
+              </form>
+            </div>
+            <nav class="footer__nav" aria-label="Footer navigation">
+              <ul class="footer__menu">
+                <li class="footer__menu-item">
+                  <a class="footer__menu-link" href="#">
+                    Home
+                  </a>
+                </li>
+                <li class="footer__menu-item">
+                  <a class="footer__menu-link" href="#">
+                    Blog
+                  </a>
+                </li>
+                <li class="footer__menu-item">
+                  <a class="footer__menu-link" href="#">
+                    Features
+                  </a>
+                </li>
+                <li class="footer__menu-item">
+                  <a class="footer__menu-link" href="#">
+                    Instant Quote
+                  </a>
+                </li>
+                <li class="footer__menu-item">
+                  <a class="footer__menu-link" href="#">
+                    About
+                  </a>
+                </li>
+                <li class="footer__menu-item">
+                  <a class="footer__menu-link" href="#">
+                    Shop
+                  </a>
+                </li>
+                <li class="footer__menu-item">
+                  <a class="footer__menu-link" href="#">
+                    Contacts
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <p class="footer__copyright">
+            ©2020 Versa
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
