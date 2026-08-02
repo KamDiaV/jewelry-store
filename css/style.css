@@ -1039,4 +1039,325 @@ select {
   letter-spacing: 0.03em;
 }
 
+.product {
+  padding: 38px 0 100px;
+}
+.product__breadcrumbs {
+  margin-bottom: 54px;
+}
+.product__breadcrumbs-list {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #adadad;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+}
+.product__breadcrumbs-item:not(:last-child)::after {
+  content: "|";
+  margin-left: 10px;
+}
+.product__breadcrumbs-item:last-child {
+  color: #000000;
+}
+.product__breadcrumbs-link {
+  color: inherit;
+}
+.product__breadcrumbs-link:hover, .product__breadcrumbs-link:focus-visible {
+  color: #ffa081;
+}
+.product__main {
+  display: grid;
+  grid-template-columns: 555px minmax(0, 1fr);
+  gap: 30px;
+  margin-bottom: 40px;
+}
+.product__gallery {
+  display: grid;
+  grid-template-columns: 166px minmax(0, 1fr);
+  gap: 30px;
+}
+.product__thumbnails {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-left: 20px;
+  border-left: 1px solid #adadad;
+}
+.product__thumbnail {
+  width: 145px;
+  height: 110px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.product__thumbnail-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.product__image-wrapper {
+  position: relative;
+}
+.product__image {
+  display: block;
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+}
+.product__image-arrow {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  display: grid;
+  place-items: center;
+  width: 17px;
+  height: 17px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.product__image-arrow img {
+  display: block;
+  width: 17px;
+  height: auto;
+  transition: opacity 0.2s;
+}
+.product__image-arrow:hover img, .product__image-arrow:focus-visible img {
+  opacity: 0.7;
+}
+.product__image-arrow--prev {
+  left: 20px;
+}
+.product__image-arrow--next {
+  right: 20px;
+}
+.product__summary {
+  max-width: 480px;
+}
+.product__rating {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  color: #adadad;
+}
+.product__sales {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+}
+.product__sales::after {
+  content: "|";
+  margin-left: 10px;
+}
+.product__stars {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.product__star {
+  display: block;
+  width: 16px;
+  height: 16px;
+}
+.product__title {
+  margin-bottom: 20px;
+  font-family: "Cormorant", serif;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
+.product__price {
+  margin-bottom: 15px;
+  color: #ffa081;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+}
+.product__purchase {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 33px;
+}
+.product__purchase-main {
+  display: grid;
+  flex: 1;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  min-height: 32px;
+  border-bottom: 1px solid #000000;
+}
+.product__quantity {
+  display: flex;
+  align-items: center;
+  gap: 21px;
+}
+.product__quantity-button {
+  display: grid;
+  place-items: center;
+  width: 15px;
+  height: 15px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.product__quantity-button:hover .product__quantity-icon, .product__quantity-button:focus-visible .product__quantity-icon {
+  opacity: 0.7;
+}
+.product__quantity-icon {
+  display: block;
+  width: 15px;
+  height: 15px;
+  transition: opacity 0.2s;
+}
+.product__quantity-value {
+  min-width: 12px;
+  text-align: center;
+}
+.product__buy {
+  justify-self: end;
+  padding-left: 30px;
+  border: none;
+  background-color: transparent;
+  color: inherit;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+.product__buy:hover, .product__buy:focus-visible {
+  color: #ffa081;
+}
+.product__wishlist {
+  display: grid;
+  flex-shrink: 0;
+  place-items: center;
+  width: 18px;
+  height: 18px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.product__wishlist-icon {
+  display: block;
+  width: 18px;
+  height: 18px;
+}
+.product__availability {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+}
+.product__availability-icon {
+  display: block;
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+.product__tabs {
+  max-width: 750px;
+}
+.product__tabs-list {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #adadad;
+}
+.product__tab {
+  position: relative;
+  padding: 0 0 9px;
+  border: none;
+  background-color: transparent;
+  color: #adadad;
+  font: inherit;
+  cursor: pointer;
+}
+.product__tab:hover, .product__tab:focus-visible, .product__tab--active {
+  color: #ffa081;
+}
+.product__tab--active::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100px;
+  height: 1px;
+  background-color: currentColor;
+}
+.product__tab-content {
+  padding-top: 20px;
+}
+.product__details-list {
+  display: grid;
+  gap: 15px;
+  padding-left: 20px;
+  list-style: disc;
+}
+.product__details-item {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+}
+
+.related-products {
+  padding-bottom: 150px;
+}
+.related-products__title {
+  font-family: "Cormorant", serif;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 1.3;
+  letter-spacing: 0.03em;
+  margin-bottom: 47px;
+  text-align: center;
+}
+.related-products__slider {
+  position: relative;
+}
+.related-products__list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 30px;
+}
+.related-products__arrow {
+  position: absolute;
+  z-index: 2;
+  top: 200px;
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 12px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.related-products__arrow img {
+  display: block;
+  width: 52px;
+  height: auto;
+  transition: opacity 0.2s;
+}
+.related-products__arrow:hover img, .related-products__arrow:focus-visible img {
+  opacity: 0.7;
+}
+.related-products__arrow--prev {
+  left: -26px;
+}
+.related-products__arrow--next {
+  right: -26px;
+}
+
 /*# sourceMappingURL=style.css.map */

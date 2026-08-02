@@ -1,0 +1,381 @@
+@use "../abstracts/mixins" as mixins;
+@use "../abstracts/variables" as vars;
+
+.product {
+  padding: 38px 0 100px;
+
+  &__breadcrumbs {
+    margin-bottom: 54px;
+  }
+
+  &__breadcrumbs-list {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: vars.$color-muted;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+  }
+
+  &__breadcrumbs-item:not(:last-child)::after {
+    content: "|";
+    margin-left: 10px;
+  }
+
+  &__breadcrumbs-item:last-child {
+    color: vars.$color-text;
+  }
+
+  &__breadcrumbs-link {
+    color: inherit;
+
+    &:hover,
+    &:focus-visible {
+      color: vars.$color-accent;
+    }
+  }
+
+  &__main {
+    display: grid;
+    grid-template-columns: 555px minmax(0, 1fr);
+    gap: 30px;
+    margin-bottom: 40px;
+  }
+
+  &__gallery {
+    display: grid;
+    grid-template-columns: 166px minmax(0, 1fr);
+    gap: 30px;
+  }
+
+  &__thumbnails {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-left: 20px;
+    border-left: 1px solid vars.$color-muted;
+  }
+
+  &__thumbnail {
+    width: 145px;
+    height: 110px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  &__thumbnail-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__image-wrapper {
+    position: relative;
+  }
+
+  &__image {
+    display: block;
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+  }
+
+  &__image-arrow {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    display: grid;
+    place-items: center;
+    width: 17px;
+    height: 17px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    transform: translateY(-50%);
+    cursor: pointer;
+
+    img {
+      display: block;
+      width: 17px;
+      height: auto;
+      transition: opacity vars.$transition-duration;
+    }
+
+    &:hover img,
+    &:focus-visible img {
+      opacity: 0.7;
+    }
+
+    &--prev {
+      left: 20px;
+    }
+
+    &--next {
+      right: 20px;
+    }
+  }
+
+  &__summary {
+    max-width: 480px;
+  }
+
+  &__rating {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    color: vars.$color-muted;
+  }
+  
+  &__sales {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+
+    &::after {
+      content: "|";
+      margin-left: 10px;
+    }
+  }
+  
+  &__stars {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  &__star {
+    display: block;
+    width: 16px;
+    height: 16px;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    font-family: vars.$font-family-heading;
+    font-size: 28px;
+    font-weight: vars.$font-weight-regular;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+  }
+
+  &__price {
+    margin-bottom: 15px;
+    color: vars.$color-accent;
+    font-size: 24px;
+    font-weight: vars.$font-weight-semibold;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+  }
+
+  &__purchase {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 33px;
+  }
+
+  &__purchase-main {
+    display: grid;
+    flex: 1;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    min-height: 32px;
+    border-bottom: 1px solid vars.$color-text;
+  }
+
+  &__quantity {
+    display: flex;
+    align-items: center;
+    gap: 21px;
+  }
+  
+  &__quantity-button {
+    display: grid;
+    place-items: center;
+    width: 15px;
+    height: 15px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  
+    &:hover .product__quantity-icon,
+    &:focus-visible .product__quantity-icon {
+      opacity: 0.7;
+    }
+  }
+  
+  &__quantity-icon {
+    display: block;
+    width: 15px;
+    height: 15px;
+    transition: opacity vars.$transition-duration;
+  }
+  
+  &__quantity-value {
+    min-width: 12px;
+    text-align: center;
+  }
+
+  &__buy {
+    justify-self: end;
+    padding-left: 30px;
+    border: none;
+    background-color: transparent;
+    color: inherit;
+    font: inherit;
+    font-weight: vars.$font-weight-semibold;
+    cursor: pointer;
+  
+    &:hover,
+    &:focus-visible {
+      color: vars.$color-accent;
+    }
+  }
+
+  &__wishlist {
+    display: grid;
+    flex-shrink: 0;
+    place-items: center;
+    width: 18px;
+    height: 18px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  &__wishlist-icon {
+    display: block;
+    width: 18px;
+    height: 18px;
+  }
+
+  &__availability {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+  }
+  
+  &__availability-icon {
+    display: block;
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+  }
+
+  &__tabs {
+    max-width: 750px;
+  }
+
+  &__tabs-list {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid vars.$color-muted;
+  }
+
+  &__tab {
+    position: relative;
+    padding: 0 0 9px;
+    border: none;
+    background-color: transparent;
+    color: vars.$color-muted;
+    font: inherit;
+    cursor: pointer;
+
+    &:hover,
+    &:focus-visible,
+    &--active {
+      color: vars.$color-accent;
+    }
+
+    &--active::after {
+      content: "";
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      width: 100px;
+      height: 1px;
+      background-color: currentColor;
+    }
+  }
+
+  &__tab-content {
+    padding-top: 20px;
+  }
+
+  &__details-list {
+    display: grid;
+    gap: 15px;
+    padding-left: 20px;
+    list-style: disc;
+  }
+
+  &__details-item {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+  }
+}
+
+.related-products {
+  padding-bottom: 150px;
+
+  &__title {
+    @include mixins.section-title;
+    margin-bottom: 47px;
+    text-align: center;
+  }
+
+  &__slider {
+    position: relative;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 30px;
+  }
+
+  &__arrow {
+    position: absolute;
+    z-index: 2;
+    top: 200px;
+    display: grid;
+    place-items: center;
+    width: 52px;
+    height: 12px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+
+    img {
+      display: block;
+      width: 52px;
+      height: auto;
+      transition: opacity vars.$transition-duration;
+    }
+
+    &:hover img,
+    &:focus-visible img {
+      opacity: 0.7;
+    }
+
+    &--prev {
+      left: -26px;
+    }
+
+    &--next {
+      right: -26px;
+    }
+  }
+}
