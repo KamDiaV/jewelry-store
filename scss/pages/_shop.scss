@@ -3,38 +3,6 @@
 .shop {
   padding: 38px 0 150px;
 
-  &__breadcrumbs {
-    margin-bottom: 38px;
-  }
-
-  &__breadcrumbs-list {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    color: vars.$color-muted;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.03em;
-  }
-
-  &__breadcrumbs-item:not(:last-child)::after {
-    content: "|";
-    margin-left: 10px;
-  }
-
-  &__breadcrumbs-item:last-child {
-    color: vars.$color-text;
-  }
-
-  &__breadcrumbs-link {
-    color: inherit;
-
-    &:hover,
-    &:focus-visible {
-      color: vars.$color-accent;
-    }
-  }
-
   &__heading {
     display: flex;
     align-items: center;
