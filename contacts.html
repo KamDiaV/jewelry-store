@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    >
+    <meta
+      name="description"
+      content="Versa jewelry store — timeless necklaces, rings, earrings and watches."
+    >
+    <title>Contacts — Versa Jewelry Store</title>
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <header class="header header--static">
+      <div class="container">
+        <div class="header__inner">
+          <a class="header__logo" href="./index.html" aria-label="Versa home">
+            <img
+              class="header__logo-image"
+              src="./assets/icons/logo.svg"
+              alt=""
+            >
+          </a>
+          <nav class="header__nav" aria-label="Main navigation">
+            <ul class="header__menu">
+              <li class="header__menu-item">
+                <a class="header__menu-link" href="./index.html">Home</a>
+              </li>
+              <li class="header__menu-item">
+                <a class="header__menu-link" href="#">About</a>
+              </li>
+              <li class="header__menu-item">
+                <a class="header__menu-link" href="#">Blog</a>
+              </li>
+              <li class="header__menu-item">
+                <a class="header__menu-link header__menu-link--accent" href="./shop.html">
+                  Shop
+                </a>
+              </li>
+              <li class="header__menu-item">
+                <a class="header__menu-link" href="#">Features</a>
+              </li>
+              <li class="header__menu-item">
+                <a class="header__menu-link" href="./contacts.html">Contacts</a>
+              </li>
+              <li class="header__menu-item">
+                <a class="header__menu-link" href="#">Instant Quote</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="header__actions" aria-label="Account actions">
+            <li class="header__actions-item">
+              <a class="header__action" href="#" aria-label="Wishlist">
+                <img
+                  class="header__action-image header__action-image--heart"
+                  src="./assets/icons/heart.svg"
+                  alt=""
+                >
+              </a>
+            </li>
+            <li class="header__actions-item">
+              <a class="header__action" href="./cart.html" aria-label="Shopping bag">
+                <img
+                  class="header__action-image"
+                  src="./assets/icons/cart.svg"
+                  alt=""
+                >
+              </a>
+            </li>
+            <li class="header__actions-item">
+              <a class="header__action" href="#" aria-label="Account">
+                <img
+                  class="header__action-image"
+                  src="./assets/icons/user.svg"
+                  alt=""
+                >
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="contacts">
+        <div class="container">
+          <nav class="breadcrumbs" aria-label="Breadcrumb">
+            <ol class="breadcrumbs__list">
+              <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link" href="./index.html">
+                  Home
+                </a>
+              </li>
+              <li
+                class="breadcrumbs__item"
+                aria-current="page"
+              >
+                Contacts
+              </li>
+            </ol>
+          </nav>
+          <h1 class="contacts__title">
+            Contacts
+          </h1>
+          <div class="contacts__grid">
+            <article class="contact-card">
+              <h2 class="contact-card__title">
+                Address
+              </h2>
+              <address class="contact-card__text">
+                12 Van Dyke St, 
+                <br>
+                Brooklyn, NY 11231
+              </address>
+            </article>
+            <article class="contact-card">
+              <h2 class="contact-card__title">
+                Phone
+              </h2>
+              <div class="contact-card__text">
+                <a class="contact-card__link" href="tel:+18001234567">
+                  1 (800) 123-4567
+                </a>
+                <a class="contact-card__link" href="tel:+18001234568">
+                  1 (800) 123-4568
+                </a>
+              </div>
+            </article>
+            <article class="contact-card">
+              <h2 class="contact-card__title">
+                Mail
+              </h2>
+              <div class="contact-card__text">
+                <a
+                  class="contact-card__link"
+                  href="mailto:sales@yoursite.com"
+                >
+                sales@yoursite.com
+                </a>
+                <a
+                  class="contact-card__link"
+                  href="mailto:hr@yoursite.com"
+                >
+                hr@yoursite.com
+                </a>
+              </div>
+            </article>
+            <article class="contact-card">
+              <h2 class="contact-card__title">
+                Hours
+              </h2>
+              <div class="contact-card__text">
+                <p>Mon - Fri: 8 AM - 6 PM</p>
+                <p>Sat: 9 AM - 4 PM</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="contacts__map">
+          <img
+            class="contacts__map-image"
+            src="./assets/images/contacts/map.jpg"
+            alt="Map showing the store location at 12 Van Dyke Street, Brooklyn"
+          >
+        </div>
+        <div class="container">
+          <div class="contacts__form-wrapper">
+            <h2 class="contacts__form-title">
+              Drop a Line
+            </h2>
+            <form class="contact-form" action="#" method="post">
+              <div class="contact-form__row">
+                <div class="contact-form__field">
+                  <label class="visually-hidden" for="contact-name">
+                    Name
+                  </label>
+                  <input
+                    class="contact-form__input"
+                    id="contact-name"
+                    name="name"
+                    type="text"
+                    placeholder="Name"
+                    required
+                  >
+                </div>
+                <div class="contact-form__field">
+                  <label class="visually-hidden" for="contact-email">
+                    Email
+                  </label>
+                  <input
+                    class="contact-form__input"
+                    id="contact-email"
+                    name="email"
+                    type="email"
+                    placeholder="Email"
+                    required
+                  >
+                </div>
+              </div>
+              <div class="contact-form__field">
+                <label class="visually-hidden" for="contact-message">
+                  Message
+                </label>
+                <textarea
+                  class="contact-form__textarea"
+                  id="contact-message"
+                  name="message"
+                  placeholder="Message"
+                  required
+                ></textarea>
+              </div>
+              <label class="contact-form__agreement">
+                <input
+                  class="contact-form__checkbox"
+                  type="checkbox"
+                  name="privacy"
+                  required
+                >
+                <span class="contact-form__checkbox-mark">
+                  <img
+                    class="contact-form__checkbox-icon"
+                    src="./assets/icons/check.svg"
+                    alt=""
+                  >
+                </span>
+                <span class="contact-form__agreement-text">
+                  I have read and agree to the Privacy Policy
+                </span>
+              </label>
+              <button
+                class="contact-form__submit button-link"
+                type="submit"
+              >
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__top">
+            <div class="footer__newsletter">
+              <p class="footer__newsletter-text">
+                Lorem ipsum dolor sit amet
+              </p>
+              <form class="footer__form" action="#" method="post">
+                <label class="visually-hidden" for="footer-email">
+                  Email address
+                </label>
+                <input
+                  class="footer__input"
+                  id="footer-email"
+                  name="email"
+                  type="email"
+                  placeholder="Email"
+                  required
+                >
+                <button class="footer__submit" type="submit">
+                  Send
+                </button>
+              </form>
+            </div>
+            <nav class="footer__nav" aria-label="Footer navigation">
+              <ul class="footer__menu">
+                <li class="footer__menu-item">
+                  <a class="footer__menu-link" href="#">
+                    Home
+                  </a>
+                </li>
+                <li class="footer__menu-item">
+                  <a class="footer__menu-link" href="#">
+                    Blog
+                  </a>
+                </li>
+                <li class="footer__menu-item">
+                  <a class="footer__menu-link" href="#">
+                    Features
+                  </a>
+                </li>
+                <li class="footer__menu-item">
+                  <a class="footer__menu-link" href="#">
+                    Instant Quote
+                  </a>
+                </li>
+                <li class="footer__menu-item">
+                  <a class="footer__menu-link" href="#">
+                    About
+                  </a>
+                </li>
+                <li class="footer__menu-item">
+                  <a class="footer__menu-link" href="#">
+                    Shop
+                  </a>
+                </li>
+                <li class="footer__menu-item">
+                  <a class="footer__menu-link" href="#">
+                    Contacts
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <p class="footer__copyright">
+            ©2020 Versa
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
