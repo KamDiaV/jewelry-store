@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    >
+    <meta
+      name="description"
+      content="Versa jewelry blog — jewelry inspiration, handmade pieces, fashion and quality."
+    >
+    <title>Blog — Versa Jewelry Store</title>
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <header class="header header--static">
+      <div class="container">
+        <div class="header__inner">
+          <a
+            class="header__logo"
+            href="./index.html"
+            aria-label="Versa home"
+          >
+            <img
+              class="header__logo-image"
+              src="./assets/icons/logo.svg"
+              alt=""
+            >
+          </a>
+          <nav class="header__nav" aria-label="Main navigation">
+            <ul class="header__menu">
+              <li class="header__menu-item">
+                <a class="header__menu-link" href="./index.html">
+                  Home
+                </a>
+              </li>
+              <li class="header__menu-item">
+                <a class="header__menu-link" href="#">
+                  About
+                </a>
+              </li>
+              <li class="header__menu-item">
+                <a
+                  class="header__menu-link header__menu-link--accent"
+                  href="./blog.html"
+                  aria-current="page"
+                >
+                  Blog
+                </a>
+              </li>
+              <li class="header__menu-item">
+                <a class="header__menu-link" href="./shop.html">
+                  Shop
+                </a>
+              </li>
+              <li class="header__menu-item">
+                <a class="header__menu-link" href="#">
+                  Features
+                </a>
+              </li>
+              <li class="header__menu-item">
+                <a class="header__menu-link" href="./contacts.html">
+                  Contacts
+                </a>
+              </li>
+              <li class="header__menu-item">
+                <a class="header__menu-link" href="#">
+                  Instant Quote
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="header__actions" aria-label="Account actions">
+            <li class="header__actions-item">
+              <a
+                class="header__action"
+                href="#"
+                aria-label="Wishlist"
+              >
+                <img
+                  class="header__action-image header__action-image--heart"
+                  src="./assets/icons/heart.svg"
+                  alt=""
+                >
+              </a>
+            </li>
+            <li class="header__actions-item">
+              <a
+                class="header__action"
+                href="./cart.html"
+                aria-label="Shopping bag"
+              >
+                <img
+                  class="header__action-image"
+                  src="./assets/icons/cart.svg"
+                  alt=""
+                >
+              </a>
+            </li>
+            <li class="header__actions-item">
+              <a
+                class="header__action"
+                href="#"
+                aria-label="Account"
+              >
+                <img
+                  class="header__action-image"
+                  src="./assets/icons/user.svg"
+                  alt=""
+                >
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="blog">
+        <div class="container">
+          <nav class="breadcrumbs" aria-label="Breadcrumb">
+            <ol class="breadcrumbs__list">
+              <li class="breadcrumbs__item">
+                <a
+                  class="breadcrumbs__link"
+                  href="./index.html"
+                >
+                  Home
+                </a>
+              </li>
+              <li
+                class="breadcrumbs__item"
+                aria-current="page"
+              >
+                Blog
+              </li>
+            </ol>
+          </nav>
+          <section class="popular-posts">
+            <h1 class="popular-posts__title">
+              Most popular
+            </h1>
+            <div class="popular-posts__slider">
+              <button
+                class="popular-posts__arrow popular-posts__arrow--prev"
+                type="button"
+                aria-label="Previous popular articles"
+              >
+                <img
+                  src="./assets/icons/arrow-left.svg"
+                  alt=""
+                >
+              </button>
+              <div class="popular-posts__list">
+                <article class="blog-card blog-card--popular">
+                  <a
+                    class="blog-card__image-link"
+                    href="#"
+                  >
+                    <img
+                      class="blog-card__image"
+                      src="./assets/images/blog/popular-1.jpg"
+                      alt="Woman wearing a gold necklace"
+                    >
+                  </a>
+                  <time
+                    class="blog-card__date"
+                    datetime="2020-08-26"
+                  >
+                    26.08.2020
+                  </time>
+                  <h2 class="blog-card__title">
+                    <a
+                      class="blog-card__title-link"
+                      href="#"
+                    >
+                      What Are the Types of Watch Movements?
+                    </a>
+                  </h2>
+                </article>
+                <article class="blog-card blog-card--popular">
+                  <a
+                    class="blog-card__image-link"
+                    href="#"
+                  >
+                    <img
+                      class="blog-card__image"
+                      src="./assets/images/blog/popular-2.jpg"
+                      alt="Woman wearing a delicate gold necklace"
+                    >
+                  </a>
+                  <time
+                    class="blog-card__date"
+                    datetime="2020-08-26"
+                  >
+                    26.08.2020
+                  </time>
+                  <h2 class="blog-card__title">
+                    <a
+                      class="blog-card__title-link"
+                      href="#"
+                    >
+                      What Are the Types of Watch Movements?
+                    </a>
+                  </h2>
+                </article>
+                <article class="blog-card blog-card--popular">
+                  <div class="blog-card__image-wrapper blog-card__image-wrapper--overlay">
+                    <a
+                      class="blog-card__image-link"
+                      href="#"
+                    >
+                      <img
+                        class="blog-card__image"
+                        src="./assets/images/blog/popular-3.jpg"
+                        alt="Woman wearing layered necklaces"
+                      >
+                    </a>
+                    <a
+                      class="blog-card__read-more button-link"
+                      href="#"
+                    >
+                      Read more
+                    </a>
+                  </div>
+                  <time
+                    class="blog-card__date"
+                    datetime="2020-08-26"
+                  >
+                    26.08.2020
+                  </time>
+                  <h2 class="blog-card__title">
+                    <a
+                      class="blog-card__title-link"
+                      href="#"
+                    >
+                      What Are the Types of Watch Movements?
+                    </a>
+                  </h2>
+                </article>
+              </div>
+              <button
+                class="popular-posts__arrow popular-posts__arrow--next"
+                type="button"
+                aria-label="Next popular articles"
+              >
+                <img
+                  src="./assets/icons/arrow-right.svg"
+                  alt=""
+                >
+              </button>
+            </div>
+          </section>
+          <section class="blog-catalog">
+            <div class="blog-catalog__heading">
+              <h2 class="blog-catalog__title">
+                Blog
+              </h2>
+              <div class="blog-catalog__controls">
+                <div class="blog-catalog__select-wrapper">
+                  <label
+                    class="visually-hidden"
+                    for="blog-sort"
+                  >
+                    Sort articles
+                  </label>
+                  <select
+                    class="blog-catalog__select"
+                    id="blog-sort"
+                    name="sort"
+                  >
+                    <option value="latest">
+                      Sort by latest
+                    </option>
+                    <option value="oldest">
+                      Sort by oldest
+                    </option>
+                  </select>
+                </div>
+                <div class="blog-catalog__select-wrapper">
+                  <label
+                    class="visually-hidden"
+                    for="blog-calendar"
+                  >
+                    Filter articles by date
+                  </label>
+                  <select
+                    class="blog-catalog__select"
+                    id="blog-calendar"
+                    name="calendar"
+                  >
+                    <option value="">
+                      Calendar
+                    </option>
+                    <option value="august-2020">
+                      August 2020
+                    </option>
+                  </select>
+                </div>
+                <form
+                  class="blog-catalog__search"
+                  action="#"
+                  method="get"
+                >
+                  <label
+                    class="visually-hidden"
+                    for="blog-search"
+                  >
+                    Search articles
+                  </label>
+                  <input
+                    class="blog-catalog__search-input"
+                    id="blog-search"
+                    name="search"
+                    type="search"
+                    placeholder="Search..."
+                  >
+                  <button
+                    class="blog-catalog__search-button"
+                    type="submit"
+                    aria-label="Search articles"
+                  >
+                    <img
+                      class="blog-catalog__search-icon"
+                      src="./assets/icons/search.svg"
+                      alt=""
+                    >
+                  </button>
+                </form>
+              </div>
+            </div>
+            <nav
+              class="blog-catalog__categories"
+              aria-label="Blog categories"
+            >
+              <ul class="blog-catalog__categories-list">
+                <li class="blog-catalog__categories-item">
+                  <a
+                    class="blog-catalog__category blog-catalog__category--active"
+                    href="#"
+                    aria-current="page"
+                  >
+                    All
+                  </a>
+                </li>
+                <li class="blog-catalog__categories-item">
+                  <a
+                    class="blog-catalog__category"
+                    href="#"
+                  >
+                    Handmade
+                  </a>
+                </li>
+                <li class="blog-catalog__categories-item">
+                  <a
+                    class="blog-catalog__category"
+                    href="#"
+                  >
+                    Fashion
+                  </a>
+                </li>
+                <li class="blog-catalog__categories-item">
+                  <a
+                    class="blog-catalog__category"
+                    href="#"
+                  >
+                    Quality
+                  </a>
+                </li>
+                <li class="blog-catalog__categories-item">
+                  <a
+                    class="blog-catalog__category"
+                    href="#"
+                  >
+                    Jewellery Sets
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <div class="blog-catalog__grid">
+              <article class="blog-card">
+                <a class="blog-card__image-link" href="#">
+                  <img
+                    class="blog-card__image"
+                    src="./assets/images/blog/blog-1.jpg"
+                    alt="Gold earrings arranged on fabric"
+                  >
+                </a>
+                <div class="blog-card__meta">
+                  <time
+                    class="blog-card__date"
+                    datetime="2020-08-26"
+                  >
+                    26.08.2020
+                  </time>
+                  <a class="blog-card__category" href="#">
+                    Handmade
+                  </a>
+                </div>
+                <h3 class="blog-card__title">
+                  <a class="blog-card__title-link" href="#">
+                    What Are the Types of Watch Movements?
+                  </a>
+                </h3>
+              </article>
+              <article class="blog-card">
+                <a class="blog-card__image-link" href="#">
+                  <img
+                    class="blog-card__image"
+                    src="./assets/images/blog/blog-2.jpg"
+                    alt="Gold rings held in hands"
+                  >
+                </a>
+                <div class="blog-card__meta">
+                  <time
+                    class="blog-card__date"
+                    datetime="2020-08-26"
+                  >
+                    26.08.2020
+                  </time>
+                  <a class="blog-card__category" href="#">
+                    Handmade
+                  </a>
+                </div>
+                <h3 class="blog-card__title">
+                  <a class="blog-card__title-link" href="#">
+                    What Are the Types of Watch Movements?
+                  </a>
+                </h3>
+              </article>
+              <article class="blog-card">
+                <a class="blog-card__image-link" href="#">
+                  <img
+                    class="blog-card__image"
+                    src="./assets/images/blog/blog-3.jpg"
+                    alt="Woman wearing silver rings"
+                  >
+                </a>
+                <div class="blog-card__meta">
+                  <time
+                    class="blog-card__date"
+                    datetime="2020-08-26"
+                  >
+                    26.08.2020
+                  </time>
+                  <a class="blog-card__category" href="#">
+                    Handmade
+                  </a>
+                </div>
+                <h3 class="blog-card__title">
+                  <a class="blog-card__title-link" href="#">
+                    What Are the Types of Watch Movements?
+                  </a>
+                </h3>
+              </article>
+              <article class="blog-card">
+                <a class="blog-card__image-link" href="#">
+                  <img
+                    class="blog-card__image"
+                    src="./assets/images/blog/blog-4.jpg"
+                    alt="Hand wearing colorful rings"
+                  >
+                </a>
+                <div class="blog-card__meta">
+                  <time
+                    class="blog-card__date"
+                    datetime="2020-08-26"
+                  >
+                    26.08.2020
+                  </time>
+                  <a class="blog-card__category" href="#">
+                    Handmade
+                  </a>
+                </div>
+                <h3 class="blog-card__title">
+                  <a class="blog-card__title-link" href="#">
+                    What Are the Types of Watch Movements?
+                  </a>
+                </h3>
+              </article>
+
+              <article class="blog-card">
+                <a class="blog-card__image-link" href="#">
+                  <img
+                    class="blog-card__image"
+                    src="./assets/images/blog/blog-5.jpg"
+                    alt="Jewelry and watches arranged on fabric"
+                  >
+                </a>
+
+                <div class="blog-card__meta">
+                  <time
+                    class="blog-card__date"
+                    datetime="2020-08-26"
+                  >
+                    26.08.2020
+                  </time>
+
+                  <a class="blog-card__category" href="#">
+                    Handmade
+                  </a>
+                </div>
+
+                <h3 class="blog-card__title">
+                  <a class="blog-card__title-link" href="#">
+                    What Are the Types of Watch Movements?
+                  </a>
+                </h3>
+              </article>
+
+              <article class="blog-card">
+                <a class="blog-card__image-link" href="#">
+                  <img
+                    class="blog-card__image"
+                    src="./assets/images/blog/blog-6.jpg"
+                    alt="Woman wearing rings outdoors"
+                  >
+                </a>
+
+                <div class="blog-card__meta">
+                  <time
+                    class="blog-card__date"
+                    datetime="2020-08-26"
+                  >
+                    26.08.2020
+                  </time>
+
+                  <a class="blog-card__category" href="#">
+                    Handmade
+                  </a>
+                </div>
+
+                <h3 class="blog-card__title">
+                  <a class="blog-card__title-link" href="#">
+                    What Are the Types of Watch Movements?
+                  </a>
+                </h3>
+              </article>
+
+              <article class="blog-card">
+                <a class="blog-card__image-link" href="#">
+                  <img
+                    class="blog-card__image"
+                    src="./assets/images/blog/blog-7.jpg"
+                    alt="Gold earrings arranged on a notebook"
+                  >
+                </a>
+
+                <div class="blog-card__meta">
+                  <time
+                    class="blog-card__date"
+                    datetime="2020-08-26"
+                  >
+                    26.08.2020
+                  </time>
+
+                  <a class="blog-card__category" href="#">
+                    Handmade
+                  </a>
+                </div>
+
+                <h3 class="blog-card__title">
+                  <a class="blog-card__title-link" href="#">
+                    What Are the Types of Watch Movements?
+                  </a>
+                </h3>
+              </article>
+
+              <article class="blog-card">
+                <a class="blog-card__image-link" href="#">
+                  <img
+                    class="blog-card__image"
+                    src="./assets/images/blog/blog-8.jpg"
+                    alt="Woman wearing earrings by the sea"
+                  >
+                </a>
+
+                <div class="blog-card__meta">
+                  <time
+                    class="blog-card__date"
+                    datetime="2020-08-26"
+                  >
+                    26.08.2020
+                  </time>
+
+                  <a class="blog-card__category" href="#">
+                    Handmade
+                  </a>
+                </div>
+
+                <h3 class="blog-card__title">
+                  <a class="blog-card__title-link" href="#">
+                    What Are the Types of Watch Movements?
+                  </a>
+                </h3>
+              </article>
+
+              <article class="blog-card">
+                <a class="blog-card__image-link" href="#">
+                  <img
+                    class="blog-card__image"
+                    src="./assets/images/blog/blog-9.jpg"
+                    alt="Jewelry packaging and perfume arranged on a table"
+                  >
+                </a>
+
+                <div class="blog-card__meta">
+                  <time
+                    class="blog-card__date"
+                    datetime="2020-08-26"
+                  >
+                    26.08.2020
+                  </time>
+
+                  <a class="blog-card__category" href="#">
+                    Handmade
+                  </a>
+                </div>
+
+                <h3 class="blog-card__title">
+                  <a class="blog-card__title-link" href="#">
+                    What Are the Types of Watch Movements?
+                  </a>
+                </h3>
+              </article>
+            </div>
+
+            <div class="blog-catalog__pagination">
+              <span class="blog-catalog__page">
+                1/10
+              </span>
+
+              <div class="blog-catalog__pagination-arrows">
+                <button
+                  class="blog-catalog__pagination-button"
+                  type="button"
+                  aria-label="Previous blog page"
+                >
+                  <img
+                    src="./assets/icons/arrow-left.svg"
+                    alt=""
+                  >
+                </button>
+
+                <button
+                  class="blog-catalog__pagination-button"
+                  type="button"
+                  aria-label="Next blog page"
+                >
+                  <img
+                    src="./assets/icons/arrow-right.svg"
+                    alt=""
+                  >
+                </button>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__top">
+            <div class="footer__newsletter">
+              <p class="footer__newsletter-text">
+                Lorem ipsum dolor sit amet
+              </p>
+
+              <form
+                class="footer__form"
+                action="#"
+                method="post"
+              >
+                <label
+                  class="visually-hidden"
+                  for="footer-email"
+                >
+                  Email address
+                </label>
+
+                <input
+                  class="footer__input"
+                  id="footer-email"
+                  name="email"
+                  type="email"
+                  placeholder="Email"
+                  required
+                >
+
+                <button
+                  class="footer__submit"
+                  type="submit"
+                >
+                  Send
+                </button>
+              </form>
+            </div>
+
+            <nav
+              class="footer__nav"
+              aria-label="Footer navigation"
+            >
+              <ul class="footer__menu">
+                <li class="footer__menu-item">
+                  <a
+                    class="footer__menu-link"
+                    href="./index.html"
+                  >
+                    Home
+                  </a>
+                </li>
+
+                <li class="footer__menu-item">
+                  <a
+                    class="footer__menu-link"
+                    href="./blog.html"
+                  >
+                    Blog
+                  </a>
+                </li>
+
+                <li class="footer__menu-item">
+                  <a
+                    class="footer__menu-link"
+                    href="#"
+                  >
+                    Features
+                  </a>
+                </li>
+
+                <li class="footer__menu-item">
+                  <a
+                    class="footer__menu-link"
+                    href="#"
+                  >
+                    Instant Quote
+                  </a>
+                </li>
+
+                <li class="footer__menu-item">
+                  <a
+                    class="footer__menu-link"
+                    href="#"
+                  >
+                    About
+                  </a>
+                </li>
+
+                <li class="footer__menu-item">
+                  <a
+                    class="footer__menu-link"
+                    href="./shop.html"
+                  >
+                    Shop
+                  </a>
+                </li>
+
+                <li class="footer__menu-item">
+                  <a
+                    class="footer__menu-link"
+                    href="./contacts.html"
+                  >
+                    Contacts
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <p class="footer__copyright">
+            ©2020 Versa
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
