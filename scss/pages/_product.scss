@@ -288,20 +288,6 @@
     position: absolute;
     z-index: 2;
     top: 200px;
-    display: grid;
-    place-items: center;
-    width: 52px;
-    height: 12px;
-
-    img {
-      width: 52px;
-      transition: opacity vars.$transition-duration;
-    }
-
-    &:hover img,
-    &:focus-visible img {
-      opacity: 0.7;
-    }
 
     &--prev {
       left: -26px;

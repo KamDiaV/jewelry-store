@@ -47,21 +47,6 @@
     gap: 40px;
   }
 
-  &__arrow {
-    display: grid;
-    place-items: center;
-  }
-
-  &__arrow-icon {
-    width: 52px;
-    transition: opacity vars.$transition-duration;
-  }
-
-  &__arrow:hover &__arrow-icon,
-  &__arrow:focus-visible &__arrow-icon {
-    opacity: 0.7;
-  }
-
   &__pagination {
     display: flex;
     align-items: center;
@@ -396,21 +381,7 @@
     position: absolute;
     z-index: 3;
     top: 180px;
-    display: grid;
-    place-items: center;
-    width: 52px;
-    height: 12px;
 
-    img {
-      width: 52px;
-      transition: opacity vars.$transition-duration;
-    }
-
-    &:hover img,
-    &:focus-visible img {
-      opacity: 0.7;
-    }
-    
     &--prev {
       left: -26px;
     }
