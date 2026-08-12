@@ -8,8 +8,6 @@
 @use "layout/footer";
 
 @use "components/button";
-@use "components/product-card";
-@use "components/article-card";
 @use "components/breadcrumbs";
 
 @use "pages/home";
@@ -19,5 +17,3 @@
 @use "pages/contacts";
 @use "pages/blog";
 @use "pages/post";
-
-@use "utilities/visually-hidden";

@@ -1,3 +1,4 @@
+@use "../abstracts/mixins" as mixins;
 @use "../abstracts/variables" as vars;
 
 .shop {
@@ -11,11 +12,7 @@
   }
 
   &__title {
-    font-family: vars.$font-family-heading;
-    font-size: 68px;
-    font-weight: vars.$font-weight-regular;
-    line-height: 1.06;
-    letter-spacing: 0.03em;
+    @include mixins.page-title;
   }
 
   &__controls {
@@ -31,7 +28,6 @@
     border-bottom: 1px solid vars.$color-text;
     background-color: transparent;
     color: inherit;
-    font: inherit;
     cursor: pointer;
   }
 
@@ -54,7 +50,6 @@
     border: none;
     background-color: transparent;
     color: inherit;
-    font: inherit;
 
     &:focus-visible {
       outline: none;
@@ -72,9 +67,6 @@
     width: 18px;
     height: 18px;
     padding: 0 0 7px;
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
 
     &:focus-visible {
       outline: none;
@@ -82,7 +74,6 @@
   }
 
   &__search-icon {
-    display: block;
     width: 18px;
     height: 18px;
   }
@@ -99,7 +90,6 @@
 
   &__category {
     position: relative;
-    color: inherit;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.03em;
@@ -153,7 +143,6 @@
   }
 
   &__image {
-    display: block;
     width: 100%;
     height: 410px;
     object-fit: cover;
@@ -181,8 +170,6 @@
   }
 
   &__title-link {
-    color: inherit;
-
     &:hover,
     &:focus-visible {
       color: vars.$color-accent;

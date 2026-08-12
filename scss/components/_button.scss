@@ -9,8 +9,6 @@
   font-size: 16px;
   font-weight: vars.$font-weight-semibold;
   line-height: 1.5;
-  text-decoration: none;
-  transition: color vars.$transition-duration;
 
   &::after {
     content: "";

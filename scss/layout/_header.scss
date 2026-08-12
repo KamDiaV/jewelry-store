@@ -10,79 +10,78 @@
   &--static {
     position: static;
   }
-}
 
-.header__inner {
-  display: flex;
-  align-items: center;
-  min-height: 72px;
-}
+  &__inner {
+    display: flex;
+    align-items: center;
+    min-height: 72px;
+  }
 
-.header__logo {
-  flex-shrink: 0;
-  margin-right: 63px;
-}
+  &__logo {
+    flex-shrink: 0;
+    margin-right: 63px;
+  }
 
-.header__logo-image {
-  width: 132px;
-  height: auto;
-}
+  &__logo-image {
+    width: 132px;
+  }
 
-.header__nav {
-  flex-shrink: 0;
-}
+  &__nav {
+    flex-shrink: 0;
+  }
 
-.header__menu {
-  display: flex;
-  align-items: center;
-  gap: 28px;
-}
+  &__menu {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+  }
 
-.header__menu-link {
-  position: relative;
-  letter-spacing: 0.03em;
-}
+  &__menu-link {
+    position: relative;
+    letter-spacing: 0.03em;
 
-.header__menu-link:hover,
-.header__menu-link:focus-visible {
-  color: vars.$color-accent;
-}
+    &:hover,
+    &:focus-visible {
+      color: vars.$color-accent;
+    }
 
-.header__menu-link--accent {
-  color: vars.$color-accent;
-}
+    &--accent {
+      color: vars.$color-accent;
 
-.header__menu-link--accent::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: -8px;
-  width: calc(100% + 16px);
-  height: 1px;
-  background-color: vars.$color-accent;
-  transform: translateY(-50%);
-}
+      &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: -8px;
+        width: calc(100% + 16px);
+        height: 1px;
+        background-color: currentColor;
+        transform: translateY(-50%);
+      }
+    }
+  }
 
-.header__actions {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-  margin-left: auto;
-}
+  &__actions {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-left: auto;
+  }
 
-.header__action {
-  display: grid;
-  width: 20px;
-  height: 20px;
-  place-items: center;
-}
+  &__action {
+    display: grid;
+    width: 20px;
+    height: 20px;
+    place-items: center;
 
-.header__action-image {
-  width: 18px;
-  height: 18px;
-}
+    &-image {
+      width: 18px;
+      height: 18px;
 
-.header__action-image--heart {
-  width: 20px;
-  height: 20px;
+      &--heart {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
 }
