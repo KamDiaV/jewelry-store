@@ -11,9 +11,21 @@
   }
 
   &__content {
+    position: relative;
     display: flex;
     flex-direction: column;
     padding: 252px 31px 53px 0;
+
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      right: 0;
+      width: 323px;
+      height: 764px;
+      background-color: vars.$color-surface;
+    }
   }
 
   &__title {
