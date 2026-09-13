@@ -246,7 +246,7 @@ select {
     gap: 24px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .header__nav {
     display: none;
   }
@@ -369,7 +369,7 @@ select {
     gap: 24px 40px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .footer__top {
     grid-template-columns: 1fr;
     gap: 48px;
