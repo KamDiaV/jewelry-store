@@ -2483,6 +2483,113 @@ select {
   margin-bottom: 10px;
 }
 
+@media (max-width: 1024px) {
+  .blog-catalog__heading {
+    align-items: flex-start;
+    gap: 32px;
+    margin-bottom: 40px;
+  }
+  .blog-catalog__title {
+    font-size: 40px;
+    line-height: 1.2;
+  }
+  .blog-catalog__controls {
+    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+  .blog-catalog__search {
+    width: 280px;
+  }
+  .blog-catalog__categories {
+    margin-bottom: 48px;
+  }
+  .blog-catalog__categories-list {
+    gap: 32px;
+    flex-wrap: wrap;
+  }
+  .blog-catalog__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 32px 24px;
+    margin-bottom: 48px;
+  }
+  .blog-catalog__pagination-arrows {
+    gap: 40px;
+  }
+  .blog-card__image {
+    height: 280px;
+  }
+}
+@media (max-width: 768px) {
+  .blog-catalog__heading {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 24px;
+  }
+  .blog-catalog__controls {
+    justify-content: flex-start;
+  }
+  .blog-catalog__select-wrapper {
+    flex: 1;
+  }
+  .blog-catalog__select {
+    width: 100%;
+  }
+  .blog-catalog__search {
+    width: 100%;
+  }
+  .blog-catalog__categories-list {
+    gap: 24px;
+  }
+  .blog-catalog__grid {
+    grid-template-columns: 1fr;
+  }
+  .blog-card__image {
+    height: 360px;
+  }
+}
+@media (max-width: 480px) {
+  .blog-catalog__heading {
+    margin-bottom: 32px;
+  }
+  .blog-catalog__title {
+    font-size: 32px;
+  }
+  .blog-catalog__controls {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 16px;
+  }
+  .blog-catalog__categories {
+    margin-bottom: 32px;
+    overflow-x: auto;
+  }
+  .blog-catalog__categories-list {
+    flex-wrap: nowrap;
+    width: max-content;
+  }
+  .blog-catalog__grid {
+    gap: 32px;
+    margin-bottom: 40px;
+  }
+  .blog-catalog__pagination {
+    padding-bottom: 8px;
+  }
+  .blog-catalog__pagination-arrows {
+    gap: 24px;
+  }
+  .blog-card__image {
+    height: 240px;
+  }
+  .blog-card__meta {
+    gap: 16px;
+    margin-top: 16px;
+    margin-bottom: 8px;
+  }
+  .blog-card__title {
+    line-height: 1.6;
+  }
+}
 .post {
   padding: 38px 0 150px;
 }
