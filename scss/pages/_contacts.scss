@@ -155,3 +155,115 @@
     outline-offset: 3px;
   }
 }
+
+@media (max-width: 1024px) {
+  .contacts {
+    padding-bottom: 64px;
+
+    &__title {
+      margin-bottom: 32px;
+      font-size: 40px;
+      line-height: 1.2;
+    }
+
+    &__grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 24px;
+      margin-bottom: 64px;
+    }
+
+    &__map {
+      margin-bottom: 64px;
+    }
+
+    &__map-image {
+      height: 360px;
+    }
+
+    &__form-title {
+      margin-bottom: 32px;
+      font-size: 40px;
+      line-height: 1.2;
+    }
+  }
+
+  .contact-card {
+    min-height: 220px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contacts {
+    &__map-image {
+      height: 320px;
+    }
+  }
+
+  .contact-form {
+    &__row {
+      grid-template-columns: 1fr;
+      gap: 24px;
+      margin-bottom: 24px;
+    }
+
+    &__textarea {
+      margin-bottom: 24px;
+    }
+
+    &__agreement {
+      margin-bottom: 32px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .contacts {
+    &__title {
+      margin-bottom: 24px;
+      font-size: 32px;
+    }
+
+    &__grid {
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+
+    &__map-image {
+      height: 240px;
+    }
+
+    &__form-title {
+      margin-bottom: 24px;
+      font-size: 32px;
+    }
+  }
+
+  .contact-card {
+    min-height: 180px;
+
+    &__title {
+      margin-bottom: 24px;
+      font-size: 24px;
+
+      &::after {
+        bottom: -12px;
+      }
+    }
+  }
+
+  .contact-form {
+    &__row {
+      gap: 16px;
+      margin-bottom: 16px;
+    }
+
+    &__agreement {
+      align-items: flex-start;
+      gap: 16px;
+    }
+
+    &__submit {
+      width: 100%;
+    }
+  }
+}
